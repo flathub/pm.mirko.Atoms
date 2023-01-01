@@ -1,7 +1,7 @@
 ---
 app-id: pm.mirko.Atoms
 runtime: org.gnome.Platform
-runtime-version: '42'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 command: atoms
 
@@ -115,7 +115,7 @@ modules:
   sources:
     - type: git
       url: https://github.com/AtomsDevs/atoms-core.git
-      commit: ba65cee534c5d47d8c71ea980fd8e5365dc52487
+      commit: c3c3d13fabd5438bf3a0198a9810231a5cd0da28
   modules:
   - name: orjson
     buildsystem: simple
@@ -192,4 +192,4 @@ modules:
   sources:
     - type: git
       url: https://github.com/AtomsDevs/Atoms.git
-      commit: db7b25de5d4ff9d382740cda25efd5ba5f05c1bd
+      commit: decbb33cfa504ab77c15d79a535809ef57782b03
