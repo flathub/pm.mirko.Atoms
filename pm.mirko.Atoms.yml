@@ -1,7 +1,7 @@
 ---
 app-id: pm.mirko.Atoms
 runtime: org.gnome.Platform
-runtime-version: '42'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 command: atoms
 
@@ -115,7 +115,7 @@ modules:
   sources:
     - type: git
       url: https://github.com/AtomsDevs/atoms-core.git
-      commit: ba65cee534c5d47d8c71ea980fd8e5365dc52487
+      commit: c3c3d13fabd5438bf3a0198a9810231a5cd0da28
   modules:
   - name: orjson
     buildsystem: simple
@@ -123,8 +123,8 @@ modules:
       - pip3 install --prefix /app --no-deps orjson-*.whl
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/d6/79/174c198de7beb2f5ce06c41ecafb1aafc0714bb61a051ad9dfbc2fed76e8/orjson-3.7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: 7ef66e7c47e9531dfa3b3ffb791b548c84903570b0914b01acc5eeb56ff5bc33
+        url: https://files.pythonhosted.org/packages/02/1c/8234d74a415bcc22f43dcbc636b6ba31df295c449e3bdc294f7616c43c49/orjson-3.8.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: 65ea3336c2bda31bc938785b84283118dec52eb90a2946b140054873946f60a4
   - name: python-requests
     buildsystem: simple
     build-commands:
@@ -192,4 +192,4 @@ modules:
   sources:
     - type: git
       url: https://github.com/AtomsDevs/Atoms.git
-      commit: db7b25de5d4ff9d382740cda25efd5ba5f05c1bd
+      commit: decbb33cfa504ab77c15d79a535809ef57782b03
