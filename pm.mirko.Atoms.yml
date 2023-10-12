@@ -11,6 +11,7 @@ finish-args:
 - "--device=dri"
 - "--socket=wayland"
 - "--allow=devel"  # this make proot works
+- "--talk-name=org.freedesktop.Flatpak"
 
 add-extensions:
   org.freedesktop.Platform.GL32:
