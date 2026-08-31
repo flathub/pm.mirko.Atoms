@@ -1,0 +1,25 @@
+diff --git a/data/pm.mirko.Atoms.appdata.xml.in b/data/pm.mirko.Atoms.appdata.xml.in
+index b132d37..39e1b09 100644
+--- a/data/pm.mirko.Atoms.appdata.xml.in
++++ b/data/pm.mirko.Atoms.appdata.xml.in
+@@ -27,6 +27,20 @@
+   <url type="bugtracker">https://github.com/AtomsDevs/Atoms/issues</url>
+   <url type="vcs-browser">https://github.com/AtomsDevs/Atoms</url>
+   <url type="contribute">https://github.com/AtomsDevs/Atoms/blob/main/CONTRIBUTING.md</url>
++  <screenshots>
++    <screenshot type="default">
++      <image>https://raw.githubusercontent.com/AtomsDevs/Atoms/v2.0.1/data/screenshots/0.png</image>
++    </screenshot>
++    <screenshot>
++      <image>https://raw.githubusercontent.com/AtomsDevs/Atoms/v2.0.1/data/screenshots/1.png</image>
++    </screenshot>
++    <screenshot>
++      <image>https://raw.githubusercontent.com/AtomsDevs/Atoms/v2.0.1/data/screenshots/2.png</image>
++    </screenshot>
++    <screenshot>
++      <image>https://raw.githubusercontent.com/AtomsDevs/Atoms/v2.0.1/data/screenshots/3.png</image>
++    </screenshot>
++  </screenshots>
+   <recommends>
+     <control>pointing</control>
+     <control>keyboard</control>

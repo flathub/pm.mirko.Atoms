@@ -1,5 +1,3 @@
 # Atoms on Flathub
 
-## Integrations
-### Distrobox
-To enable Distrobox integration add `--talk-name=org.freedesktop.Flatpak` and restart the application.
+Atoms is distributed primarily through [cpak](https://cpak.it/store/Utilities/github.com/atomsdevs/atoms). This repository maintains the Flatpak package.
