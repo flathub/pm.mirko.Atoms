@@ -121,3 +121,5 @@ modules:
         url: https://github.com/AtomsDevs/Atoms.git
         tag: v2.0.1
         commit: 256931e2660abc7797177e0b4d944d3b6268fd9c
+      - type: patch
+        path: add-appstream-screenshots.patch
