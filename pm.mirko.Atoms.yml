@@ -24,6 +24,24 @@ cleanup:
   - '*.la'
 
 modules:
+  - name: cpak
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 cpak /app/libexec/atoms/cpak
+    sources:
+      - type: file
+        url: https://github.com/Containerpak/cpak/releases/download/v2.10.16/cpak-linux-amd64
+        sha256: 714d8b270f4670264812e560e088d0711bdce1440d5ba7279766f9f27f9b3d57
+        dest-filename: cpak
+        only-arches:
+          - x86_64
+      - type: file
+        url: https://github.com/Containerpak/cpak/releases/download/v2.10.16/cpak-linux-arm64
+        sha256: 6df772b12e82db7a8253d60ea0711a1fde8ce820e06a2132e32012a9f9284065
+        dest-filename: cpak
+        only-arches:
+          - aarch64
+
   - name: meson
     buildsystem: simple
     build-commands:
@@ -32,20 +50,6 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/45/76/c2f4cff5dabcd64711bd327dd00fd22ec603bed6a928dd5d058044d568d8/meson-1.10.0.tar.gz
         sha256: 8071860c1f46a75ea34801490fd1c445c9d75147a65508cd3a10366a7006cc1c
-
-  - name: gtk4-layer-shell
-    buildsystem: meson
-    config-opts:
-      - -Dexamples=false
-      - -Ddocs=false
-      - -Dtests=false
-      - -Dsmoke-tests=false
-      - -Dintrospection=true
-      - -Dvapi=true
-    sources:
-      - type: git
-        url: https://github.com/wmww/gtk4-layer-shell.git
-        commit: 1c963c51514581c41b9bdae08cdf69171265cdda
 
   - name: libpeas
     buildsystem: meson
@@ -80,10 +84,11 @@ modules:
     config-opts:
       - -Dsystem=false
       - -Dintrospection=false
+      - -Dlayer-shell=false
     sources:
       - type: git
         url: https://github.com/singularityos-lab/libsingularity.git
-        commit: dbf6622952337c8e5f11dba2e05592e60165e5e8
+        commit: 493e24c2f4f80706e3ba70d45c45b93e610f5cc2
 
   - name: vte
     buildsystem: meson
@@ -119,7 +124,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/AtomsDevs/Atoms.git
-        tag: v2.0.1
-        commit: 256931e2660abc7797177e0b4d944d3b6268fd9c
+        tag: v2.0.2
+        commit: e0bf1d4c5f5ac731d91fac3c69da4d8be83246f0
       - type: patch
         path: add-appstream-screenshots.patch
